@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cek Bilangan Positif, Negatif, atau Nol</title>
+</head>
+<body>
+
+    <h2>Cek Bilangan Positif, Negatif, atau Nol</h2>
+
+    <label for="number">Masukkan bilangan:</label><br>
+    <input type="number" id="number" name="number"><br><br>
+
+    <button onclick="checkNumber()">Cek</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            let number = parseInt(document.getElementById("number").value);
+
+            if (number > 0) {
+                document.getElementById("result").innerHTML = number + " adalah bilangan positif";
+            } else if (number < 0) {
+                document.getElementById("result").innerHTML = number + " adalah bilangan negatif";
+            } else {
+                document.getElementById("result").innerHTML = "Bilangan adalah nol";
+            }
+        }
+    </script>
+
+</body>
+</html>

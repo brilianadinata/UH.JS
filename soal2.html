@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perhitungan Luas Persegi Panjang</title>
+</head>
+<body>
+
+    <h2>Menghitung luas Persegipanjang</h2>
+
+    <label for="panjang">Panjang:</label><br>
+    <input type="number" id="panjang" name="panjang"><br><br>
+
+    <label for="lebar">Lebar:</label><br>
+    <input type="number" id="lebar" name="lebar"><br><br>
+
+    <button onclick="hitungLuas()">Hitung</button>
+
+    <p id="result"></p>
+
+    <script>
+        function hitungLuas() {
+            let panjang = parseFloat(document.getElementById("panjang").value);
+            let lebar = parseFloat(document.getElementById("lebar").value);
+            let luasPersegiPanjang = panjang * lebar;
+            document.getElementById("result").innerHTML = "Luas persegi panjang adalah: " + luasPersegiPanjang;
+        }
+    </script>
+
+</body>
+</html>

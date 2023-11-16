@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Kembalian</title>
+</head>
+<body>
+
+    <h2> Kembalian</h2>
+
+    <label for="harga">Harga Barang:</label><br>
+    <input type="number" id="harga" name="harga"><br><br>
+
+    <label for="uang">Jumlah Uang yang Dibayarkan:</label><br>
+    <input type="number" id="uang" name="uang"><br><br>
+
+    <button onclick="hitungKembalian()">Hitung</button>
+
+    <script>
+        function hitungKembalian() {
+            let harga = parseFloat(document.getElementById("harga").value);
+            let uang = parseFloat(document.getElementById("uang").value);
+
+            let kembalian = uang - harga;
+            console.log("Kembalian yang harus diberikan adalah: " + kembalian);
+        }
+    </script>
+
+</body>
+</html>
